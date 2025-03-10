@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Cuenta Bancaria</title>
+</head>
+<body>
+    <h2>Formulario de Creación de Cuenta Bancaria</h2>
+    <form id="formularioCuenta">
+        <label for="nombre">Nombre Completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="saldo">Saldo Inicial:</label><br>
+        <input type="number" id="saldo" name="saldo" required><br><br>
+
+        <button type="submit">Crear Cuenta</button>
+    </form>
+
+    <div id="confirmacion" style="display:none;">
+        <h3>Cuenta creada exitosamente</h3>
+        <p><strong>Nombre:</strong> <span id="confirmNombre"></span></p>
+        <p><strong>Correo Electrónico:</strong> <span id="confirmCorreo"></span></p>
+        <p><strong>Saldo Inicial:</strong> $<span id="confirmSaldo"></span></p>
+    </div>
+    <script src="Crear-cuenta.js"></script>
+</body>
+</html>
